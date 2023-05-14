@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link rel="icon" type="image/png" href="https://thumbs.dreamstime.com/z/form-icon-form-logo-document-icon-simple-vector-icon-form-icon-form-logo-document-icon-white-background-128623457.jpg">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<h2>Registration Form</h2>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>Professional Details</h1>
+
+			<input type="text" placeholder="Company Name" />
+			<input type="email" placeholder="Company Email" />
+			<button onclick="alert('Your Detail is submitted!')">Submit</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Personal Details</h1>
+			<input type="text" placeholder="First Name" />
+			<input type="text" placeholder="Last Name" />
+			<input type="date" placeholder="dd/mm/yyyy" />
+			<input list="gender" placeholder="Gender">
+			<datalist id="gender">
+				<option value="Male">
+				<option value="Female">
+				<option value="Others">
+			</datalist>
+			<textarea name="Address" id="Address" >Address</textarea>
+
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Friend!</h1>
+				<p>Please complete your personal details and start journey with us</p>
+				<button class="ghost" id="signIn">Back</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hello, Friend!</h1>
+				<p>Enter your work details and start journey with us</p>
+				<button class="ghost" id="signUp">Next</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+  <script  src="./script.js"></script>
+
+</body>
+</html>

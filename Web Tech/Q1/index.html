@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://img.uefa.com/imgml/favicon/comp/ucl.ico">
+    <title>UEFA Champions League</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c80561e6bf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="logo">
+          <img src="./ezgif.com-crop-removebg-preview.png" alt="">
+          <a href="/" class="nav-logo"><span class="menu active"> UEFA CL </span> </a>
+        </div>
+        <div class="nav" id="nav-menu">
+          <i class="fas fa-times" id="close-menu"></i>
+          <ul class="nav-list">
+            <li class="nav-item"><a href="" class="nav-link"><span class="menu">About</span></a></li>
+            <li class="nav-item"><a href="" class="nav-link"><span class="menu">Schedule</span></a></li>
+            <li class="nav-item"><a href="" class="nav-link"><span class="menu">Highlights</span></a></li>
+          </ul>
+        </div>
+        <i class="fas fa-ellipsis-v" id="toggle-menu"></i>
+            
+      </nav>
+
+    <header>
+        <img src="https://img.uefa.com/imgml/uefacom/ucl/social/og-default.jpg" alt="">
+        <div class="header-content" id="header">
+            <h1 id="head1" data-aos="fade-up">Hello,</h1>
+            <h1 id="head2" data-aos="fade-up"><span>UEFA Champions League</span>  Welcomes You :)</h1>
+            <h3 id="head3"  data-aos="fade-up">Unoffical Website of UEFA CL</h3>
+        </div>
+
+    </header>
+
+    <section class="about" data-aos="fade-right">
+        <div class="img">
+            <img src="https://editorial.uefa.com/resources/0280-17d49055ad53-e4185cf2e854-1000/format/wide1/ufa_champions_league_final_2023_stadium_and_trophy_feature.jpeg?imwidth=656" alt="">
+        </div>
+        <div class="about-content">
+            <h1>About Us</h1>
+            <p>
+                The UEFA Champions League (abbreviated as UCL, or sometimes, UEFA CL) is an annual club association football competition organised by the Union of European Football Associations (UEFA) and contested by top-division European clubs, deciding the competition winners through a round robin group stage to qualify for a double-legged knockout format, and a single leg final. It is one of the most prestigious football tournaments in the world and the most prestigious club competition in European football, played by the national league champions (and, for some nations, one or more runners-up) of their national associations.
+            </p>
+        </div>
+    </section>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <script>
+        AOS.init({
+            delay: 100,
+            offset: 145
+        });
+        window.addEventListener("scroll",()=>{
+            let header = document.getElementById("head3");
+            let about = document.getElementsByClassName("about")[0];
+            var value = window.scrollY;
+            console.log(value);
+            header.style.marginBottom=value*1.01 + 'px';
+        })
+      </script>
+</body>
+</html>
